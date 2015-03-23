@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+	<html ng-app="sportsApp">
+		<head>
+			<title>Angular Madness!</title>
+			<script src="libs/angular.js"></script>
+
+			<link href="index.css" rel="stylesheet" />
+		</head>
+		<body>
+
+			<img class="background" src="http://a1.espncdn.com/prod/assets/bg_v2/bg_frontpage_red.jpg">
+
+				<div class="header-container" ng-controller="HeaderController">
+					<div class="header-logo">
+						<img src="http://a2.espncdn.com/i/sctrends/logo-sc-trends2.png"></img>
+					</div>
+					<div class="header-item" ng-repeat="item in data">
+						{{ item.text }}
+					</div>
+				</div>
+
+				<div class="content-container">
+
+					<div class="left-side">
+
+						<div class="headline">
+						</div>
+
+						<div class="subheadline">
+						</div>
+
+					</div>
+
+					<div class="right-side">
+
+						<div class="stories">
+						</div>
+
+						<div class="carousel">
+						</div>
+
+					</div>
+
+				</div>
+
+				<script src="index.js"></script>
+
+		</body>
+	</html> 
