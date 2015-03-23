@@ -23,10 +23,46 @@
 
 					<div class="left-side">
 
-						<div class="headline">
+						<div class="headline " ng-controller="HeadlineController">
+							<img class="headline-image" ng-src=" {{ data.background }}" />
+							<div class="scoreboard">
+								<div class="scoreboard-background"></div>
+								<ul class="scores">
+									<li>
+										<span class="away-score score"> {{  }} </span>
+									</li>
+									<li>
+										<span class="home-score score"> {{  }} </span>
+									</li>
+								</ul>
+								<ul class="details" ng-repeat="item in data">
+									<li>
+										<span class="status"> {{  }} </span>
+									</li>
+									<li>
+										<a ng-href="{{ item.big.score.link.url }}" class="link"> {{  }} </a>
+									</li>
+								</ul>
+							</div>
+							<div class="headline-overlay">
+								{{headline}}
+							</div>
+							<div class="headline-subs">
+								<p class="head-sub">
+
+
+								</p>
+								<cite class="citation"></cite>
+							</div>
 						</div>
 
 						<div class="subheadline">
+							<ul>
+								<li>
+									<div>
+									</div>
+								</li>
+							</ul>
 						</div>
 
 					</div>
